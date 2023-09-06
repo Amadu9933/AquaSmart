@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Water Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Water Tracker</h1>
+    </header>
+
+    <main>
+      <section class="water-display">
+        <figure>
+          <img
+            src="assets/bottle.png"
+            alt="Water Bottle"
+            id="water-bottle-image"
+          />
+          <figcaption>
+            Current Water Level: <span id="current-level">0 ml</span>
+          </figcaption>
+        </figure>
+
+        <article>
+          <h2>Target Daily Intake:</h2>
+          <input
+            type="number"
+            id="target-intake"
+            placeholder="Enter target in ml"
+            aria-label="Target Intake"
+          />
+          <button id="set-target">Set Target</button>
+        </article>
+
+        <aside>
+          <h2>Reminders:</h2>
+          <label for="reminder-interval">Remind me every:</label>
+          <select id="reminder-interval">
+            <option value="1">1 hour</option>
+            <option value="2">2 hours</option>
+          </select>
+          <button id="set-reminder">Set Reminder</button>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <p>Stay Hydrated!</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
